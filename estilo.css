@@ -1,0 +1,318 @@
+
+*{
+    margin:0 ;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color:grey;
+    font-size: 24px;
+    background-color: powderblue; 
+}
+h2{
+    color: rgb(12, 11, 11);
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.titulo{
+  background-color: lightblue;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}
+#cabecera{
+    background-color: lightblue; 
+    font-size: 12;
+    font-family: Arial, Helvetica, sans-serif;
+         
+}
+
+/*-------------------------------------------*/
+/* Estilos del header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue; 
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000; /*queda arriba*/
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+}
+
+header img {
+      width: 200px; /* Tamaño de la imagen de logo */
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      padding: 5%;
+
+}
+
+
+
+
+
+
+
+/*----------------------------------------*/
+
+nav a{
+    text-decoration:none;
+    display:inline;  /*--- en la misma linea-------------*/
+}   
+
+
+
+.sticky-section {
+    position: sticky;
+    top: 0; /* Fija la sección en la parte superior */
+    padding: 5px;
+    font-size: 15px; /*tamaño de letra del menu sticky*/
+    z-index: 1000; /* Asegura que esté en la parte superior */
+    background-color: lightblue; 
+
+}  
+.nav-list   {
+    text-align: right; 
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 12;
+    list-style: none; /*elimina los puntos de la lista*/
+    text-decoration: none; /*no aparece lo puntos de la lista*/
+}
+
+
+nav .nav-list  li {
+    display: inline-block; /*muestra una opcion al lado de la otra*/
+    margin-right: 20px;
+}
+
+#inicio{
+  width:100vw;
+  height: 100vh; 
+  align-items:center;
+  justify-content:center;
+  /*background-image: url("imagenes/setcapucha.jpg");*/
+  background-image: url("./imagenes/mantaCrecimientoRosa.jpeg");
+  Object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
+  display: flex;
+  background-size: cover;/* La imagen cubre todo el contenedor */
+  background-position:center; /*Centrado*/
+  
+}
+
+/*----  TEXTO para portada ****************/
+
+.texto-bienvenida {
+  color:rgb(78, 71, 71);
+  text-align: center;
+  /*background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente para el texto */
+  font-size:2em;
+  font-weight: bold;
+}
+
+.video source {
+    background-color: lightblue; 
+    display:flex;
+    flex-wrap: wrap;
+    flex:1 1 200px;
+    justify-content: space-between;
+    padding: 5%;
+    border-width: 10%;
+
+}
+
+.video1{
+
+}
+.video2{
+
+}
+
+
+p.ubica{
+    padding: 10px;
+}
+
+
+
+form{
+    color: grey;
+    background-color: lightblue;    
+    font-size: 12;
+    
+}
+
+
+  .producto :hover img { /*agranda imagen del flex cuando pasamo el mouse*/
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.2);
+  }
+  
+
+
+/**********************************************************************/
+/* Estilo del contenedor principal */
+#productos {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%; /* El contenedor ocupa el 75% del ancho de la pantalla */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+/* Estilo para cada producto */
+.producto {
+  text-align: center; /* Centra el contenido dentro de cada producto */
+  width: 30%; /* Cada producto ocupa el 30% del ancho del contenedor principal */
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar cada producto */
+  overflow: hidden; /* Oculta el contenido que sobrepase el tamaño de la tarjeta */
+}
+
+/* Estilo para cada imagen */
+.producto img {
+  width: 80%; /* el ancho que ocupa la imagen dentro del contenedor */
+  height: 40%;/*el alto que ocupa la imagen dentro del contenedor*/
+  border: 3px solid #333; /* Borde alrededor de cada imagen */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Espacio entre la imagen y el título */
+}
+
+/* Estilo para el título y el enlace */
+.producto h2 a {
+  text-decoration: none; /* Quita subrayado del enlace */
+  color: #333; /* Color del texto */
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Cambio de color al pasar sobre el enlace */
+.producto h2 a:hover {
+  color: #007bff; /* Cambia a azul en hover */
+}
+
+
+
+/*****************************************************************************************/
+
+div{
+    /*background-color: lightblue;*/ 
+     }
+
+
+
+#bordado{
+    background-color: lightblue;
+
+}
+
+#ubicacion{
+  background-color: lightblue;
+  display: flex;
+}
+
+      
+    
+
+a{ /*color de enlace*/
+    color: gray;
+    text-decoration:none;
+    }
+    
+ a:hover{
+    color: white;
+    }
+    
+ a:active{
+    color: cadetblue;
+ }
+
+ img:hover{
+    color: aqua;
+ }
+ 
+ #pagina-footer{
+  color: gray;
+  background-color: black; 
+ }
+ .finfooter{
+    background-color:black; 
+    text-align: center; 
+
+ }
+
+
+ footer nav li{
+   list-style:none;
+   text-align:left;
+ }
+ 
+
+/*====================================================*/
+
+   
+    /* Contenedor principal de las columnas */
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Permite que las columnas se adapten en pantallas pequeñas */
+      gap: 20px;
+    }
+
+    /* Cada columna dentro del footer */
+    .footer-column {
+      flex: 1 1 30%; /* Flex-grow: ocupa espacio disponible, Flex-shrink: se reduce, Flex-basis: ancho mínimo */
+      min-width: 30%; /* Tamaño mínimo de cada columna */
+    }
+
+    /* Imagen y texto en la primera columna */
+    .footer-column img {
+      width: 200px; /* Tamaño de la imagen de logo */
+      height: auto;
+      display: block;
+      /*margin-bottom: 10px;*/
+      padding: 5%;
+    }
+
+    .footer-column h3 {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+
+    
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column; /* Las columnas se apilan en una sola columna en pantallas pequeñas */
+        text-align: center;
+      }
+    }
+
+    /* Estilos responsive */
+@media (max-width: 768px) {
+  .menu ul {
+      display: none; /* Ocultar menú en pantallas pequeñas */
+  }
+}
